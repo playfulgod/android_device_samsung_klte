@@ -38,8 +38,7 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-    $(LOCAL_PATH)/dt.img:dt.img
+    $(LOCAL_KERNEL):kernel
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
