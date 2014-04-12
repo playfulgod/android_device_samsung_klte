@@ -21,12 +21,17 @@
 #
 
 # inherit from common msm8960
--include device/samsung/msm8960-common/BoardConfigCommon.mk
+#-include device/samsung/msm8960-common/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/klte/include
 
 
-# overrides  msm8960
+# overrides  msm8974
+TARGET_ARCH := arm
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := krait
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -137,8 +142,8 @@ BOARD_HAVE_NEW_QC_GPS :=
 TARGET_NO_RPC := true
 
 # Vendor Init
-#TARGET_UNIFIED_DEVICE := true
-#TARGET_INIT_VENDOR_LIB := libinit_msm
-#TARGET_LIBINIT_DEFINES_FILE := device/samsung/klte/init/init_klte.c
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/klte/init/init_klte.c
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/klte
