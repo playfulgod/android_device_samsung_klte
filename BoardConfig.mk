@@ -26,12 +26,7 @@
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/klte/include
 
 
-# overrides  msm8974
-TARGET_ARCH := arm
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := krait
+# overrides  msm8960
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -128,7 +123,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := kltexx,kltespr,kltetmo,SM-G900T,kltecan,klteatt,kltevzw,klte
+TARGET_OTA_ASSERT_DEVICE := kltexx,kltespr,kltetmo,SM-G900T,kltecan,kltempcs,klteusc,SM-K900M,SM-K900I,SM-K900K,klte
 
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_eur_defconfig
 
